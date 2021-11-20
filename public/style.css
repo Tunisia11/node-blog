@@ -1,0 +1,192 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.nav{
+    width: 100%;
+    background-color: rgb(94, 223, 94);
+    height: 100px;
+    font-size: 30px;
+    
+    
+
+}
+.navbar_ul{
+    margin: 20px;
+    
+
+}
+.nav-item{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+
+}
+.jumbotron{
+
+margin: 10px;
+}
+.catagory{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.option{
+    margin: 20px;
+    display: inline-block;
+   
+}
+.option_body{
+    padding: 10px;
+    margin: 10px;
+  
+    
+
+}
+.option_body img{
+    width: 200px;
+    border-radius: 80%;
+}
+main{
+    text-align: center;
+}
+.posts{
+    margin: 20px;
+    background-color: rgb(232, 241, 243);
+    text-align: center;
+     width: 100%;
+    
+    
+    
+}
+.post{
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 60px;
+    background-color:rgb(142, 218, 142);
+    padding: 20px;
+    display: inline-block;
+    
+}
+
+.image img{
+    width: 200px;
+}
+
+.form_div{
+    text-align: center;
+    margin: 50px  100px;
+}
+.form_div input{
+    margin: 10px;
+    height: 30px;
+    width: 250px;
+    font-size: large;
+    padding: 3px;
+}
+.form_div textarea{
+    width: 300px;
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+
+}
+.form_div button{
+    width: 200px;
+    height: 40px;
+    font-size: large;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(16, 180, 57);
+}
+.creat_post_btt button{
+   position: absolute;
+   top: 110px;
+   right: 10px;
+    background-color: rgb(53, 199, 16);
+}
+.creat_post_btt img {
+    width: 50px;
+}
+
+.post_title{
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.post_img{
+    
+    text-align: center;
+    margin: 30px;
+
+
+}
+.post_img img{
+    width: 700px;
+}
+.post_text{
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+   
+}
+
+
+
+
+
+
+
+footer{
+
+    text-align: center;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: greenyellow;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+.jumbotron{
+   
+    display: none;
+    }
+    .catagory{
+        width: 90%;
+        text-align: center;
+    }
+    .option{
+       
+        display: inline-block;
+       
+    }
+  
+    .option_body img{
+        width: 250px;
+        border-radius: 80%;
+    }
+    footer{
+        position: absolute;
+        bottom: 0%;
+       
+        font-size: large;
+    }
+
+}

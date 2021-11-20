@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title>register</title>
+</head>
+<body>
+    <header>
+        <%- include('../partials/hader'); %>
+    </header>
+        <div class="notification">
+            <% if (errors.length>0) { %>
+                <ul>
+                    <% errors.forEach(function(error) { %>
+                      <li>
+                        <h1> <%= error %> </h1>
+                      </li>
+                    <% }); %>
+                  </ul>
+            <% } %>
+        </div>
+    <div class="form_div">
+        <form action="/users/register" method="post" enctype="multipart/form-data">
+            <label for="">Username</label> 
+            <input type="text" name="username" placeholder="enter your user name"> <br>
+            <label for="">Email</label>
+            <input type="text" name="email" placeholder="enter your email "> <br>
+            <label for="">password</label>
+            <input type="text" name="password" placeholder="enter your  password">
+            <br> <br>
+            <button type="submit">register</button>
+        
+        
+        
+        
+        
+        
+        </form>
+    </div>
+    
+</body>
+</html>

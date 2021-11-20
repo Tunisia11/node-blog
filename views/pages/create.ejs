@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+
+
+<body>
+    <header>
+        <%- include('../partials/hader'); %>
+    </header>
+
+    <div class="form_div">
+        <fieldset>
+            <legend>create new post</legend>
+
+            <form action="/posts/store" method="post" enctype="multipart/form-data">
+                <label  for="">Aother :</label>
+                <input  aria-required="true" type="text" name="Aother"> <br>
+                <label  for="">title :</label>
+                <input  aria-required="true" type="text" name="title"> <br>
+                <label for="">descrption :</label>
+                 <textarea  aria-required="true"   name="description" id="" cols="30" rows="5"></textarea>   <br>
+                <label for="">conten :</label>
+                <textarea   aria-required="true" name="text" id="" cols="30" rows="10"></textarea> <br>
+                <input  aria-required="true" type="file" name="image" >
+                <br>
+            
+               
+                   
+             
+                <button type="submit">create</button>
+            
+            
+            
+            
+            
+            </form>
+        </fieldset>
+
+
+    </div>
+
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+    
+</body>
+</html>

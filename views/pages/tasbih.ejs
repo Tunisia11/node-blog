@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+
+<header>
+    <%- include('../partials/hader'); %>
+</header>
+
+
+
+    <h1>This is tasbih</h1>
+    <p>sabeh </p>
+   
+<div class="tasbih">
+    
+    <% types.forEach(function(type) { %>
+      <div class="tasbih_widget">
+           
+       <div class="tasbih_widget_2">
+        <p class="tasbih_text"><%= type.text %></p> 
+        <p class="tasbih_reward"><%= type.reward %></p>
+          <div class="counter_screnn">
+              <h1><%= type.nb %></h1> 
+          </div>
+       </div>
+      </div>
+      
+        
+        <% }); %>
+       
+</div>
+ 
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

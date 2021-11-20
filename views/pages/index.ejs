@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body>
+
+
+<header>
+    <%- include('../partials/hader'); %>
+</header>
+
+<main>
+
+ 
+ 
+  <div class="posts">
+   
+      <% posts.forEach(function(post) { %>
+        <a href="/posts/<%= post._id %> ">  <div class="post">
+          
+            
+       <div class="">
+        
+          <h4>wrote by :  <%= post.Aother %>  at    <%= post.createdAt.toDateString() %>    </h4>
+        <h1><%= post.title %></h1> <br>
+       </div>
+        <div class="image">
+          <img src="<%= post.image %> " alt="ygyg" >
+        </div>
+       <div class="descrption">
+        <h3>  <%= post.description %></h3>
+      </div>
+      </a>
+       </div>
+     
+        
+      
+    <% }); %>
+    </div>
+    
+  </div>
+</main>
+
+
+</body>
+</html>
