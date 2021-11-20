@@ -17,7 +17,7 @@
   "author": "y",
   "license": "ISC",
   "engines": {
-    "node": "10.x"
+    "node": "14.x"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
